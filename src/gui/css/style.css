@@ -1,0 +1,259 @@
+/* SETUP SCREEN */
+#setupScreen {
+    -fx-background-color: white;
+}
+
+.field {
+    -fx-background-color: white;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: rgba(55, 62, 70, 0.5);
+    -fx-font-size: 20px;
+    -fx-text-fill: rgb(102, 169, 124);
+}
+
+.button {
+    -fx-background-color: rgb(55, 62, 70);
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-padding: 15px;
+}
+
+/* MENU PANE */
+
+#menu {
+    -fx-background-color: rgb(49, 56, 64);
+}
+
+#menuId {
+    -fx-fill: white;
+    -fx-border-width: 0 0 0 0;
+    -fx-font-size: 24px;
+}
+
+#menuName {
+    -fx-fill: rgb(102, 169, 124);
+    -fx-border-width: 0 0 0 0;
+    -fx-font-size: 24px;
+}
+
+/* one of the tabs is activated */
+.activeTab {
+    -fx-background-color: rgb(49, 56, 64);
+}
+
+/* CONVERSATIONS AND CONTACTS PANES */
+
+#chatCover FontIcon {
+    -fx-icon-size: 60px;
+    -fx-icon-color: rgb(55, 62, 70);
+}
+
+.tabIcon {
+    -fx-icon-size: 25px;
+    -fx-icon-color: rgb(168, 181, 192);
+}
+
+.tabButton:selected {
+    -fx-background-color: rgb(55, 62, 70);
+
+    /* add green bar */
+    -fx-border-width: 0 0 0 4;
+    -fx-border-color: rgb(102, 169, 124);
+}
+
+.tabButton:selected FontIcon {
+    -fx-icon-color: white;
+}
+
+.contactsHeader {
+    -fx-fill: white;
+    -fx-font-size: 25px;
+}
+
+/* chat */
+#chatFooterType {
+    -fx-background-color: white;
+}
+
+#chatFooterTypeField {
+    -fx-background-color: white;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-radius: 20;
+    -fx-background-radius: 20;
+
+    -fx-font-size: 20px;
+}
+
+#chatFooterAttachButton {
+    -fx-background-color: white;
+}
+
+#chatFooterSendButton {
+    -fx-background-color: white;
+}
+
+#chatFooterSendIcon {
+    -fx-icon-color: rgb(120, 207, 144);
+    -fx-icon-size: 25px;
+}
+
+#chatFooterAttachIcon {
+    -fx-icon-size: 25px;
+    -fx-icon-color: rgb(168, 181, 192);
+}
+
+/* chatPane */
+#chatPaneUsernameText {
+    -fx-font-size: 25px;
+}
+
+/* chat pane header */
+#chatLockButton FontIcon {
+    -fx-icon-size: 25px;
+    -fx-icon-color: rgb(55, 62, 70);
+}
+
+#chatNameButton FontIcon {
+    -fx-icon-size: 25px;
+    -fx-icon-color: rgb(55, 62, 70);
+}
+
+#chatHeaderReceiverName {
+    -fx-fill: rgb(55, 62, 70);
+    -fx-font-size: 25px;
+}
+
+#chatMainScroll {
+    -fx-background-color: rgb(243, 247, 247);
+}
+
+#chatMainScroll:focused {
+    -fx-background-color: transparent;
+    -fx-border: 0 0 0 0;
+}
+
+/* STATUSES */
+.statusRed {
+    -fx-icon-color: rgba(227, 105, 101, 0.8);
+}
+
+.statusGreen {
+    -fx-icon-color: rgba(102, 169, 124, 0.8);
+}
+
+.statusOrange {
+    /*-fx-icon-size: 25px;*/
+    -fx-icon-color: rgba(242, 182, 62, 0.8);
+}
+
+/* contacts */
+/* whole grid pane */
+.usersTabEntry {
+    -fx-padding: 10px;
+}
+
+/* left id part */
+.entryId {
+    -fx-font-size: 25px;
+    -fx-text-fill: white;
+}
+
+/* full username  */
+.entryUsername {
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+}
+
+/* last message */
+.entryLastMessage {
+    -fx-text-fill: rgb(168, 181, 192);
+    -fx-font-size: 14px;
+}
+
+.usersTabEntry:selected {
+    -fx-background-color: rgb(65, 73, 82);
+}
+
+/* MESSAGE */
+/* whole message */
+.messagePane {
+    -fx-padding: 10px;
+}
+
+/*  user num */
+.messageUser {
+    -fx-font-size: 25px;
+    -fx-text-fill: rgb(55, 62, 70);
+}
+
+/* actual text */
+.messageIncomingBody {
+    -fx-font-size: 18px;
+    -fx-border-width: 1;
+    -fx-background-color: white;
+    -fx-text-fill: lightgray;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+
+    -fx-padding: 10px;
+}
+
+.messageOutgoingBody {
+    -fx-font-size: 18px;
+    -fx-border-width: 1;
+    -fx-background-color: rgb(120, 207, 144);
+    -fx-text-fill: white;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+
+    -fx-padding: 10px;
+}
+
+/* group chat */
+.choiceContainer {
+    -fx-padding: 20px;
+}
+
+.comboBox {
+    -fx-padding: 10px;
+    -fx-border-width: 0 0 1 0;
+    -fx-border-color: rgba(55, 62, 70, 0.5);
+    -fx-fill: white;
+    -fx-font-size: 18px;
+}
+
+.groupButton {
+    -fx-background-color: rgb(65, 73, 82);
+    -fx-text-fill: white;
+    -fx-font-size: 18px;
+    -fx-padding: 5px;
+}
+
+.combo-box-base {
+    -fx-background-color: white;
+    -fx-padding: 0;
+    -fx-border-insets: 5px 0;
+    -fx-background-insets: 5px 0;
+}
+
+.lastChoiceContainer {
+    -fx-padding: 0 0 5px 0;
+}
+
+.detailsTab {
+    -fx-background-color: rgb(55, 62, 70);
+}
+
+.iconLock {
+    -fx-icon-size: 25px;
+    -fx-icon-color: rgb(49, 56, 64);
+}
+
+.iconLockLocked {
+    -fx-icon-size: 25px;
+    -fx-icon-color: rgb(102, 169, 124);
+}
+
+.iconLockLocked:disabled {
+    -fx-opacity: 1.0;
+}
